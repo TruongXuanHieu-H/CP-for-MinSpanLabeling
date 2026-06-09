@@ -76,6 +76,7 @@ int main(int argc, char *argv[])
 
         cp.setParameter(IloCP::LogVerbosity, IloCP::Verbose);
         cp.setSearchPhases(phase);
+        cp.setParameter(IloCP::TimeLimit, 150);
 
         if (cp.solve())
         {
