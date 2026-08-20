@@ -1,0 +1,61 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/R-dwt__503.mtx.rnd
+! Target value is set to 31
+! Lower bound is set to 32
+! Upper bound is set to 251
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 504 variables, 2765 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.09s (0.09s extraction + 0.00s propagation)
+ !  . Log search space  : 4016.3 (before), 4016.3 (after)
+ !  . Memory usage      : 5.2 MB (before), 5.2 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        504                 -
+ + New bound is 62
+                       62        503    1   F    31 != _int453
+ + New bound is 63
+ *           248      561  0.30s        2      (gap is 74.60%)
+             248     135k        503    2   F     3 != _int179
+ + New bound is 66 (gap is 73.39%)
+             248     135k        502    2   F     4 != _int179
+ + New bound is 67 (gap is 72.98%)
+             248     128k        502    4   F     5 != _int191
+ + New bound is 68 (gap is 72.58%)
+             248     138k        491    7   F     6 != _int331
+ + New bound is 69 (gap is 72.18%)
+             248     164k        502    4   F    49 != _int194
+ + New bound is 72 (gap is 70.97%)
+             248     211k        455    2   F    10 != _int165
+ + New bound is 73 (gap is 70.56%)
+             248     220k        133    1   F    42 != _int88
+ + New bound is 74 (gap is 70.16%)
+             248     273k        445    4   F    43 != _int179
+ + New bound is 75 (gap is 69.76%)
+             248     486k        503    2   F    49 != _int193
+ + New bound is 81 (gap is 67.34%)
+             248     517k        503    7   F    60 != _int436
+ + New bound is 92 (gap is 62.90%)
+             248    1922k        253    1   F    61 != _int329
+ + New bound is 93 (gap is 62.50%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 248 (gap is 62.50%)
+ ! Best bound             : 93
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 120604370
+ ! Number of fails        : 50789852
+ ! Total memory usage     : 177.0 MB (174.3 MB CP Optimizer + 2.7 MB Concert)
+ ! Time spent in solve    : 1800.07s (1799.98s engine + 0.09s extraction)
+ ! Search speed (br. / s) : 67003.2
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: FEASIBLE (optimality not proven)
+! Best span = 248
+! Labeling: 125 63 63 1 156 218 63 63 63 32 63 94 125 63 32 1 94 94 187 94 125 32 218 32 125 125 94 187 94 94 1 94 32 94 63 94 63 125 63 156 32 1 32 32 63 63 125 1 32 218 94 32 218 125 63 218 63 32 32 63 1 125 125 1 94 125 1 32 94 32 1 1 1 94 1 32 63 63 1 94 218 94 94 94 32 63 1 32 218 218 32 32 63 63 94 125 187 63 63 63 32 32 187 32 94 125 32 187 94 63 94 1 1 218 32 32 32 63 156 63 1 32 187 32 1 32 94 94 1 32 1 94 94 187 187 94 32 187 125 1 1 218 1 94 94 63 94 63 125 125 32 32 1 63 1 218 32 32 1 94 156 187 156 1 94 63 32 1 1 32 1 218 32 156 125 1 187 94 32 63 1 32 1 187 94 1 156 218 63 1 218 156 125 187 1 125 32 32 63 1 32 156 1 63 32 1 1 1 125 218 32 1 1 32 94 32 218 156 32 63 187 125 1 125 32 1 1 187 94 63 32 94 1 187 1 32 32 63 94 218 63 218 32 125 63 32 32 63 32 248 125 94 1 32 218 156 1 218 1 1 1 94 218 63 156 63 63 32 1 32 94 32 156 32 125 32 1 63 63 94 63 94 187 1 63 1 218 32 125 1 156 125 94 94 63 218 63 187 32 94 32 1 63 94 63 32 94 125 218 156 1 187 94 125 125 94 125 32 1 125 94 32 63 125 63 187 94 218 1 1 63 1 94 156 1 63 218 63 63 125 125 187 187 1 63 94 94 63 218 32 94 94 1 94 32 125 94 94 94 63 156 125 94 32 94 32 156 156 63 187 156 94 187 32 32 63 32 187 1 94 32 1 32 218 125 1 63 125 94 1 32 1 156 187 218 156 63 1 32 94 32 125 63 32 32 1 63 63 94 94 63 1 32 63 125 125 94 125 94 1 125 218 63 63 156 1 187 1 1 94 94 94 187 156 1 32 1 1 63 1 1 32 125 94 32 63 63 94 32 187 63 32 1 94 187 63 94 32 32 63 125 63 187 94 63 63 94 32 94 32 125 125 94 94 32 218 125 1 63 32 94 63 218 63 1 1 94 1 32 32 32 125 32 1 187 94 32 32 156 125 94 94 32 
+! -------------------------------------------------------- 
+! All verification passed

@@ -1,0 +1,47 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/G-will57.mtx.rnd
+! Target value is set to 8
+! Lower bound is set to 9
+! Upper bound is set to 42
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 130 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 311.1 (before), 311.1 (after)
+ !  . Memory usage      : 496.3 kB (before), 496.3 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 16
+                       16         57    1   F     8 != _int34
+ + New bound is 17
+ *            40       73  0.04s        1      (gap is 57.50%)
+              40     2419         20    1   F    19 != _int48
+ + New bound is 29 (gap is 27.50%)
+              40     4147         55    2   F     9 != _int49
+ + New bound is 36 (gap is 10.00%)
+              40     8185         55    7   F     5 != _int49
+ + New bound is 39 (gap is 2.50%)
+              40    12660         55    7            -
+ + New bound is 40 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 40 (optimal - effective tol. is 0)
+ ! Best bound             : 40
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 143347
+ ! Number of fails        : 68848
+ ! Total memory usage     : 11.5 MB (11.4 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.36s (0.34s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 421608.8
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 40
+! Labeling: 1 9 9 1 9 33 17 1 1 9 9 9 1 9 17 17 17 17 17 25 9 1 9 1 9 33 25 1 9 9 1 9 9 17 17 17 17 17 33 9 1 1 1 40 17 25 9 17 9 1 17 9 33 1 9 9 25 
+! -------------------------------------------------------- 
+! All verification passed

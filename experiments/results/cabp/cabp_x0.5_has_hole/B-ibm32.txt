@@ -1,0 +1,45 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/B-ibm32.mtx.rnd
+! Target value is set to 4
+! Lower bound is set to 5
+! Upper bound is set to 16
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 33 variables, 93 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 130.2 (before), 130.2 (after)
+ !  . Memory usage      : 418.8 kB (before), 418.8 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         33                 -
+ + New bound is 8
+                        8         32    1   F     4 != _int4
+ + New bound is 9
+ *            16       33  0.04s        1      (gap is 43.75%)
+              16     1840          6    1   F     4 != _int19
+ + New bound is 13 (gap is 18.75%)
+              16    11750         16    2   F     9 != _int11
+ + New bound is 14 (gap is 12.50%)
+              16    14986         10    4            -
+ + New bound is 16 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 16 (optimal - effective tol. is 0)
+ ! Best bound             : 16
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 120620
+ ! Number of fails        : 59457
+ ! Total memory usage     : 8.9 MB (8.8 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.36s (0.36s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 335055.6
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 16
+! Labeling: 13 5 9 5 1 5 1 9 16 9 9 5 5 9 9 5 13 9 1 5 9 1 1 9 5 1 1 1 13 5 13 5 
+! -------------------------------------------------------- 
+! All verification passed

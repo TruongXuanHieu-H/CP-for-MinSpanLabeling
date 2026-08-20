@@ -1,0 +1,44 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/H-impcol_b.mtx.rnd
+! Target value is set to 3
+! Lower bound is set to 4
+! Upper bound is set to 29
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 60 variables, 284 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 290.3 (before), 290.3 (after)
+ !  . Memory usage      : 724.7 kB (before), 724.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         60                 -
+ + New bound is 6
+                        6         59    1   F     3 != _int30
+ + New bound is 7
+ *            25       67  0.08s        1      (gap is 72.00%)
+ *            24      101  0.08s        2      (gap is 70.83%)
+              24     4154         56    2   F     3 != _int15
+ + New bound is 16 (gap is 33.33%)
+              24    1785k         54    1            -
+ + New bound is 24 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 24 (optimal - effective tol. is 0)
+ ! Best bound             : 24
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14781643
+ ! Number of fails        : 7018500
+ ! Total memory usage     : 21.7 MB (21.5 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 47.72s (47.72s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 309822.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 24
+! Labeling: 7 7 16 1 4 1 4 10 4 1 1 4 1 1 1 10 19 7 10 10 7 7 22 1 13 1 7 1 13 10 10 16 1 7 4 4 10 4 10 24 7 7 7 4 4 1 1 13 1 4 1 1 4 13 1 7 16 7 1 
+! -------------------------------------------------------- 
+! All verification passed

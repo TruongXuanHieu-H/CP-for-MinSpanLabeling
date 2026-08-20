@@ -1,0 +1,47 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/H-impcol_b.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 44
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 60 variables, 284 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 326.4 (before), 326.4 (after)
+ !  . Memory usage      : 350.4 kB (before), 350.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         60                 -
+ + New bound is 7
+                        2         59    1   F     1 != _int29
+ + New bound is 8
+ *            43       60  0.05s        1      (gap is 81.40%)
+              43     5251         57    2   F    25 != _int57
+ + New bound is 26 (gap is 39.53%)
+              43   15283k         18    7   F    14 != _int5
+ + New bound is 27 (gap is 37.21%)
+              43   15291k         15    7   F    26 != _int5
+ + New bound is 28 (gap is 34.88%)
+              43   15406k         55    4            -
+ + New bound is 43 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 43 (optimal - effective tol. is 0)
+ ! Best bound             : 43
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 123551826
+ ! Number of fails        : 58954799
+ ! Total memory usage     : 52.4 MB (52.2 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 250.77s (250.76s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 492709.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 43
+! Labeling: 13 1 7 1 7 7 7 7 7 13 19 1 7 7 7 7 1 13 1 25 13 13 43 7 19 13 13 7 1 1 25 37 13 19 7 7 1 1 7 7 25 13 1 1 1 7 19 1 13 7 7 19 1 1 13 13 37 31 7 
+! -------------------------------------------------------- 
+! All verification passed

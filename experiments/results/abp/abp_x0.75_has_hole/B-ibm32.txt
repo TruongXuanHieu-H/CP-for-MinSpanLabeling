@@ -1,0 +1,41 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/B-ibm32.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 24
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 33 variables, 93 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 149.9 (before), 149.9 (after)
+ !  . Memory usage      : 304.1 kB (before), 304.1 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         33                 -
+ + New bound is 7
+                        2         32    1   F     1 != _int3
+ + New bound is 8
+ *            19       34  0.03s        1      (gap is 57.89%)
+              19      455          1    1            -
+ + New bound is 19 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 19 (optimal - effective tol. is 0)
+ ! Best bound             : 19
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 6232
+ ! Number of fails        : 2596
+ ! Total memory usage     : 5.5 MB (5.4 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.03s (0.02s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 311600.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 19
+! Labeling: 13 7 13 7 13 7 1 13 1 13 13 1 1 7 13 7 1 13 19 7 13 1 1 19 1 1 1 1 7 7 1 7 
+! -------------------------------------------------------- 
+! All verification passed

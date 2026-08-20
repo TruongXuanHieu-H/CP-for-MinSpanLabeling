@@ -1,0 +1,54 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/P-can__445.mtx.rnd
+! Target value is set to 65
+! Lower bound is set to 66
+! Upper bound is set to 333
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 446 variables, 1685 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.06s (0.06s extraction + 0.00s propagation)
+ !  . Log search space  : 3735.5 (before), 3735.5 (after)
+ !  . Memory usage      : 3.3 MB (before), 3.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        446                 -
+ + New bound is 130
+                      130        445    1   F    65 != _int161
+ + New bound is 131
+ *           333      430  0.20s        6      (gap is 60.66%)
+ *           325      556  0.20s        7      (gap is 59.69%)
+             325     133k        445    4   F     4 != _int391
+ + New bound is 135 (gap is 58.46%)
+             325     140k        364    7   F     8 != _int302
+ + New bound is 139 (gap is 57.23%)
+             325     153k        423    2   F     9 != _int76
+ + New bound is 140 (gap is 56.92%)
+             325     230k        263    4   F    10 != _int314
+ + New bound is 141 (gap is 56.62%)
+             325     280k        422    2   F    79 != _int312
+ + New bound is 145 (gap is 55.38%)
+             325     974k        287    4   F    17 != _int59
+ + New bound is 148 (gap is 54.46%)
+             325    1271k        446    7   F    94 != _int315
+ + New bound is 160 (gap is 50.77%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 325 (gap is 50.77%)
+ ! Best bound             : 160
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 131871574
+ ! Number of fails        : 60531219
+ ! Total memory usage     : 175.7 MB (174.1 MB CP Optimizer + 1.6 MB Concert)
+ ! Time spent in solve    : 1800.07s (1800.02s engine + 0.06s extraction)
+ ! Search speed (br. / s) : 73261.6
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: FEASIBLE (optimality not proven)
+! Best span = 325
+! Labeling: 196 66 196 131 131 66 325 261 1 66 196 131 131 131 1 196 1 1 196 66 196 66 196 131 131 196 1 66 196 1 1 131 131 196 1 131 66 1 196 1 196 196 66 196 1 66 66 131 1 196 131 1 66 196 66 66 196 1 196 1 131 196 196 131 1 1 131 1 131 66 131 66 131 1 66 1 66 66 196 196 1 131 131 1 131 131 1 131 1 131 196 131 261 66 66 131 1 66 1 66 66 66 66 66 1 131 1 66 1 66 1 66 131 131 131 261 1 196 261 1 66 66 196 261 66 66 196 1 196 261 66 131 131 66 66 196 196 1 196 131 1 196 1 1 131 66 1 196 66 196 66 196 261 1 66 196 131 66 1 1 66 66 1 66 196 131 66 131 196 131 131 261 131 196 1 131 66 66 1 66 196 1 1 1 261 1 196 261 261 1 1 66 196 261 261 1 196 1 196 66 131 131 131 261 131 196 1 261 261 196 1 131 131 1 66 1 1 261 131 66 66 261 131 66 66 1 66 66 131 1 66 131 1 131 196 66 1 1 196 131 261 66 196 261 131 66 1 261 66 1 196 196 1 131 1 66 1 131 66 66 66 66 131 1 261 1 1 1 196 196 1 1 1 1 1 66 196 196 196 261 196 131 196 131 1 196 131 131 1 1 1 131 1 131 66 131 66 1 131 196 131 261 1 131 261 131 196 131 261 131 1 66 196 66 1 131 196 131 1 1 66 131 66 66 1 131 131 1 66 66 196 66 261 66 131 196 66 196 131 261 196 196 66 196 261 131 1 196 196 1 131 196 261 66 131 131 196 66 196 1 131 66 66 196 196 66 1 196 66 196 66 1 196 261 131 196 196 196 1 261 1 66 261 131 1 131 261 66 66 66 131 196 1 196 196 131 66 196 66 131 131 261 66 196 66 1 131 261 66 196 1 66 196 66 131 1 66 131 1 196 66 1 1 66 1 1 1 1 131 131 261 1 66 131 1 66 196 66 131 261 66 66 1 1 261 
+! -------------------------------------------------------- 
+! All verification passed

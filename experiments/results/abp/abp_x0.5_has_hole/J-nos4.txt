@@ -1,0 +1,41 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/J-nos4.mtx.rnd
+! Target value is set to 17
+! Lower bound is set to 18
+! Upper bound is set to 50
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 250 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 566.7 (before), 566.7 (after)
+ !  . Memory usage      : 384.0 kB (before), 384.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 18
+                        2        100    1   F     1 != _int64
+ + New bound is 19
+ *            35       71  0.04s        1      (gap is 45.71%)
+              35     1322         66    1            -
+ + New bound is 35 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 35 (optimal - effective tol. is 0)
+ ! Best bound             : 35
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14191
+ ! Number of fails        : 6047
+ ! Total memory usage     : 8.9 MB (8.7 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 354775.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 35
+! Labeling: 1 18 1 18 18 1 18 18 35 35 1 35 1 18 35 18 1 35 35 1 1 18 18 1 18 18 35 35 35 35 1 18 35 1 18 18 35 1 1 35 18 35 1 1 18 35 35 18 35 1 18 18 1 18 1 1 35 1 18 1 35 35 1 1 1 35 1 18 35 1 18 18 18 1 35 35 18 18 18 18 18 35 1 1 18 1 35 35 1 1 35 1 35 1 35 18 1 18 1 35 
+! -------------------------------------------------------- 
+! All verification passed

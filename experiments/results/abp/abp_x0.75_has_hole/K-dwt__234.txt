@@ -1,0 +1,41 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/K-dwt__234.mtx.rnd
+! Target value is set to 38
+! Lower bound is set to 39
+! Upper bound is set to 87
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 118 variables, 165 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 752.5 (before), 752.5 (after)
+ !  . Memory usage      : 382.9 kB (before), 382.9 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        118                 -
+ + New bound is 39
+                        2        117    1   F     1 != _int92
+ + New bound is 40
+ *            77      112  0.04s        1      (gap is 48.05%)
+              77      695          1    1            -
+ + New bound is 77 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 77 (optimal - effective tol. is 0)
+ ! Best bound             : 77
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 6772
+ ! Number of fails        : 877
+ ! Total memory usage     : 8.4 MB (8.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 225733.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 77
+! Labeling: 77 1 1 1 39 39 39 39 77 1 1 1 1 1 1 1 77 1 39 1 39 1 77 1 1 1 77 39 1 1 39 1 1 1 77 1 1 39 39 1 1 1 1 1 1 39 1 39 1 1 1 1 1 1 1 1 1 1 39 39 1 1 39 77 39 1 39 1 1 39 77 77 39 1 77 39 1 1 1 77 39 1 1 77 1 1 1 1 39 39 77 39 39 1 39 1 39 1 1 1 1 77 1 1 1 39 1 77 1 39 39 39 77 39 1 1 77 
+! -------------------------------------------------------- 
+! All verification passed

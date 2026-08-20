@@ -1,0 +1,139 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/O-impcol_d.mtx.rnd
+! Target value is set to 78
+! Lower bound is set to 79
+! Upper bound is set to 318
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 426 variables, 1270 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.05s (0.05s extraction + 0.00s propagation)
+ !  . Log search space  : 3539.3 (before), 3539.3 (after)
+ !  . Memory usage      : 2.7 MB (before), 2.7 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        426                 -
+ + New bound is 156
+                      156        425    1   F    78 != _int309
+ + New bound is 157
+ *           318     3123  0.30s        3      (gap is 50.63%)
+ *           317     3608  0.30s        5      (gap is 50.47%)
+ *           316     4171  0.34s        3      (gap is 50.32%)
+ *           315     5754  0.41s        3      (gap is 50.16%)
+ *           312     5682  0.41s        6      (gap is 49.68%)
+             312    84163        425    4   F     3 != _int301
+ + New bound is 160 (gap is 48.72%)
+             312    71898        421    7   F    84 != _int213
+ + New bound is 163 (gap is 47.76%)
+             312    79984        363    1   F        -
+ + New bound is 166 (gap is 46.79%)
+             312     145k        425    7   F    12 != _int412
+ + New bound is 169 (gap is 45.83%)
+             312     181k        406    4   F    91 != _int197
+ + New bound is 170 (gap is 45.51%)
+             312     178k        400    7   F    91 != _int177
+ + New bound is 171 (gap is 45.19%)
+             312     195k        425    2   F    93 != _int186
+ + New bound is 172 (gap is 44.87%)
+             312     186k        399    1   F        -
+ + New bound is 173 (gap is 44.55%)
+             312     285k        422    1   F        -
+ + New bound is 176 (gap is 43.59%)
+             312     285k        422    1   F        -
+ + New bound is 177 (gap is 43.27%)
+             312     317k        382    2   F   101 != _int186
+ + New bound is 180 (gap is 42.31%)
+             312     329k        426    7   F   104 != _int316
+ + New bound is 183 (gap is 41.35%)
+             312     323k        395    1   F        -
+ + New bound is 184 (gap is 41.03%)
+ ! Time = 27.43s, Average fail depth = 79, Memory usage = 59.6 MB
+ ! Current bound is 184 (gap is 41.03%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             312     323k        395    1   F        -
+ + New bound is 187 (gap is 40.06%)
+             312     323k        395    1   F        -
+ + New bound is 188 (gap is 39.74%)
+             312     390k        425    2   F    34 != _int170
+ + New bound is 191 (gap is 38.78%)
+             312     393k        403    1   F        -
+ + New bound is 192 (gap is 38.46%)
+             312     406k        405    7   F   116 != _int187
+ + New bound is 195 (gap is 37.50%)
+             312     395k        422    1   F        -
+ + New bound is 196 (gap is 37.18%)
+             312     403k        425    1   F        -
+ + New bound is 198 (gap is 36.54%)
+             312     403k        425    1   F        -
+ + New bound is 199 (gap is 36.22%)
+             312     453k        426    4   F   122 != _int197
+ + New bound is 201 (gap is 35.58%)
+             312     437k        407    1   F        -
+ + New bound is 202 (gap is 35.26%)
+             312     536k        397    2   F   125 != _int187
+ + New bound is 204 (gap is 34.62%)
+             312     523k        424    1   F        -
+ + New bound is 205 (gap is 34.29%)
+             312     530k        399    1   F        -
+ + New bound is 207 (gap is 33.65%)
+             312     530k        399    1   F        -
+ + New bound is 208 (gap is 33.33%)
+             312     559k        406    1   F        -
+ + New bound is 210 (gap is 32.69%)
+             312     559k        406    1   F        -
+ + New bound is 211 (gap is 32.37%)
+             312     604k        391    7   F   134 != _int197
+ + New bound is 213 (gap is 31.73%)
+             312     591k        402    1   F        -
+ + New bound is 214 (gap is 31.41%)
+             312     619k        392    1   F        -
+ + New bound is 216 (gap is 30.77%)
+             312     619k        392    1   F        -
+ + New bound is 217 (gap is 30.45%)
+ ! Time = 49.74s, Average fail depth = 76, Memory usage = 61.4 MB
+ ! Current bound is 217 (gap is 30.45%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             312     774k        381    7   F   139 != _int194
+ + New bound is 219 (gap is 29.81%)
+             312     738k        423    1   F        -
+ + New bound is 220 (gap is 29.49%)
+             312     801k        420    7   F   143 != _int194
+ + New bound is 222 (gap is 28.85%)
+             312     763k        409    1   F        -
+ + New bound is 223 (gap is 28.53%)
+             312     828k        416    4   F   146 != _int194
+ + New bound is 225 (gap is 27.88%)
+             312     827k        406    7   F   147 != _int194
+ + New bound is 227 (gap is 27.24%)
+             312     792k        407    1   F    70 != _int194
+ + New bound is 228 (gap is 26.92%)
+             312     840k        375    1   F    73 != _int194
+ + New bound is 230 (gap is 26.28%)
+             312     840k        375    1   F    73 != _int194
+ + New bound is 231 (gap is 25.96%)
+             312     897k        411    4   F   153 != _int194
+ + New bound is 233 (gap is 25.32%)
+             312     865k        419    1   F   144 != _int194
+ + New bound is 234 (gap is 25.00%)
+             312     956k        425    1            -
+ + New bound is 312 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 5 solutions found.
+ ! Best objective         : 312 (optimal - effective tol. is 0)
+ ! Best bound             : 312
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7028987
+ ! Number of fails        : 3433440
+ ! Total memory usage     : 88.1 MB (86.9 MB CP Optimizer + 1.3 MB Concert)
+ ! Time spent in solve    : 77.84s (77.80s engine + 0.05s extraction)
+ ! Search speed (br. / s) : 90346.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 312
+! Labeling: 235 157 79 79 157 1 157 157 1 235 1 1 157 157 79 157 1 157 79 1 235 1 79 79 79 79 79 1 1 1 235 79 235 157 79 157 157 157 79 235 1 79 235 157 235 157 79 79 79 235 235 79 157 1 79 235 1 157 79 79 1 79 1 1 79 79 157 235 235 157 79 1 79 79 79 157 79 235 1 1 157 157 312 235 1 1 79 1 1 79 157 1 157 157 157 157 182 1 1 79 235 1 157 79 1 157 1 235 79 235 235 157 1 1 157 1 157 157 1 1 1 1 235 79 235 157 157 1 1 235 79 1 157 79 1 235 235 1 1 1 1 79 1 1 79 1 157 235 79 235 1 79 157 79 1 1 79 157 235 79 79 1 157 157 235 157 157 79 1 1 1 157 235 157 1 79 1 1 235 1 1 79 1 79 157 157 79 1 79 1 235 235 79 79 199 157 235 157 79 157 157 79 1 1 157 235 235 1 157 79 79 79 79 157 1 79 79 1 79 157 79 157 157 157 235 235 79 79 79 157 157 79 1 157 79 157 1 1 1 157 157 79 235 1 79 79 235 79 79 1 79 235 157 157 235 157 235 157 79 157 121 79 1 199 235 1 79 1 1 157 1 157 1 79 1 157 79 235 1 1 157 235 235 235 1 235 79 157 1 157 157 1 79 79 1 79 1 157 235 157 79 157 1 79 1 157 79 79 157 235 235 1 1 1 157 79 79 1 235 157 79 157 1 79 157 1 79 79 79 157 157 1 157 1 1 79 157 79 79 235 1 157 79 79 1 157 1 79 1 1 79 79 79 157 157 235 79 157 235 79 1 1 1 157 157 79 79 1 157 1 79 157 235 157 235 235 79 79 1 1 157 79 1 235 79 79 1 1 1 235 79 1 157 1 79 1 157 79 79 79 79 79 79 235 235 157 1 1 157 157 79 79 157 79 79 1 1 79 79 79 1 1 79 1 79 
+! -------------------------------------------------------- 
+! All verification passed

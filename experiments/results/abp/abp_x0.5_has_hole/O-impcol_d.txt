@@ -1,0 +1,52 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/O-impcol_d.mtx.rnd
+! Target value is set to 60
+! Lower bound is set to 61
+! Upper bound is set to 212
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 426 variables, 1270 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.03s (0.03s extraction + 0.00s propagation)
+ !  . Log search space  : 3290.6 (before), 3290.6 (after)
+ !  . Memory usage      : 836.4 kB (before), 836.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        426                 -
+ + New bound is 61
+                        2        425    1   F     1 != _int308
+ + New bound is 62
+ *           212      731  0.10s        1      (gap is 70.75%)
+ *           181     2112  0.17s        5      (gap is 65.75%)
+             181     8852        283    1   F    61 != _int196
+ + New bound is 122 (gap is 32.60%)
+             181    10097        424    7   F     2 != _int28
+ + New bound is 123 (gap is 32.04%)
+             181    10423        283    2   F     3 != _int186
+ + New bound is 124 (gap is 31.49%)
+             181    10013        424    4   F     3 != _int189
+ + New bound is 125 (gap is 30.94%)
+             181    14297        424    1   F    65 != _int196
+ + New bound is 126 (gap is 30.39%)
+             181    29071        426    1            -
+ + New bound is 181 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 181 (optimal - effective tol. is 0)
+ ! Best bound             : 181
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 244712
+ ! Number of fails        : 112010
+ ! Total memory usage     : 35.7 MB (35.0 MB CP Optimizer + 0.7 MB Concert)
+ ! Time spent in solve    : 1.56s (1.53s engine + 0.03s extraction)
+ ! Search speed (br. / s) : 159942.5
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 181
+! Labeling: 121 61 1 61 61 61 61 61 61 61 181 61 61 61 1 61 61 61 61 121 121 1 121 181 121 1 1 1 61 61 1 121 121 121 61 61 61 121 61 121 61 1 61 121 61 61 61 121 61 121 121 61 121 61 1 121 181 121 1 61 1 1 1 121 61 121 61 121 121 61 121 1 121 61 61 121 1 121 121 121 121 61 121 61 121 121 1 1 1 121 61 1 121 61 181 61 121 61 61 121 1 1 1 181 121 181 61 121 1 61 1 121 181 61 1 181 121 61 1 121 1 181 181 61 1 121 121 121 1 121 61 1 1 181 1 121 121 181 61 1 61 1 121 1 181 121 61 1 1 1 1 121 121 61 1 1 61 61 121 181 1 61 1 1 1 121 1 1 1 1 61 61 61 121 61 121 61 1 61 121 1 1 121 61 61 121 181 61 1 1 181 121 61 1 121 181 1 1 1 121 121 61 1 121 1 1 121 1 61 121 1 1 181 181 61 1 1 61 1 121 1 61 61 1 1 121 1 61 1 121 1 1 121 1 61 61 181 181 1 61 181 61 121 1 61 61 1 121 61 61 1 121 1 181 61 121 121 61 1 121 61 1 1 121 1 1 1 121 181 61 1 61 61 61 121 1 1 181 61 181 121 121 181 61 1 61 61 121 121 121 1 181 61 61 1 61 1 1 181 1 121 1 61 61 1 61 1 1 181 121 121 61 121 181 1 181 1 1 181 121 61 61 181 181 61 121 1 1 61 61 121 61 61 181 1 1 121 121 61 1 121 121 1 1 1 61 61 61 1 1 61 1 1 181 1 121 181 181 61 61 181 181 1 61 61 1 61 61 61 1 1 121 1 1 121 1 61 61 61 121 121 1 1 181 1 1 121 1 61 181 1 1 1 61 61 61 121 1 61 121 1 1 1 121 155 61 1 1 1 1 1 61 121 121 1 1 1 1 181 181 121 181 61 121 121 
+! -------------------------------------------------------- 
+! All verification passed

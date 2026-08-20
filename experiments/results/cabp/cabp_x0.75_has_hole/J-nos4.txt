@@ -1,0 +1,42 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/J-nos4.mtx.rnd
+! Target value is set to 24
+! Lower bound is set to 25
+! Upper bound is set to 75
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 101 variables, 250 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 625.5 (before), 625.5 (after)
+ !  . Memory usage      : 745.1 kB (before), 745.1 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        101                 -
+ + New bound is 48
+                       28        100    1   F    14 != _int36
+ + New bound is 49
+ *            75      192  0.05s        1      (gap is 34.67%)
+ *            72      122  0.05s        4      (gap is 31.94%)
+              72     3829         92    1            -
+ + New bound is 72 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 72 (optimal - effective tol. is 0)
+ ! Best bound             : 72
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 33889
+ ! Number of fails        : 15998
+ ! Total memory usage     : 14.1 MB (13.8 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 0.11s (0.11s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 338890.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 72
+! Labeling: 25 1 25 1 25 25 1 1 1 49 25 49 1 72 49 25 1 25 25 49 1 1 1 25 1 1 49 49 49 49 25 1 25 25 1 1 49 25 49 1 1 1 1 49 25 1 49 1 25 25 1 1 1 1 1 49 49 25 1 49 1 25 25 25 25 49 1 1 49 49 1 49 1 49 49 25 1 25 49 1 49 1 25 25 1 49 49 25 49 25 1 25 49 49 1 25 49 25 25 49 
+! -------------------------------------------------------- 
+! All verification passed

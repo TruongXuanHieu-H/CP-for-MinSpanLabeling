@@ -1,0 +1,70 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/M-bcsstk06.mtx.rnd
+! Target value is set to 17
+! Lower bound is set to 18
+! Upper bound is set to 210
+! Time limit is set to 1800
+! Vertices mode is set to Has hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 421 variables, 3723 constraints, 1 phase
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.07s (0.07s extraction + 0.00s propagation)
+ !  . Log search space  : 3246.6 (before), 3246.6 (after)
+ !  . Memory usage      : 1.4 MB (before), 1.4 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        421                 -
+ + New bound is 18
+                        2        420    1   F     1 != _int148
+ + New bound is 19
+ *           205      419  0.15s        2      (gap is 90.73%)
+ *           188      422  0.15s        4      (gap is 89.89%)
+             188     153k        292    1   F     4 != _int38
+ + New bound is 22 (gap is 88.30%)
+             188     153k        292    1   F     5 != _int38
+ + New bound is 23 (gap is 87.77%)
+             188     157k        414    2   F     6 != _int15
+ + New bound is 24 (gap is 87.23%)
+             188     157k        414    2   F     9 != _int15
+ + New bound is 27 (gap is 85.64%)
+             188     157k        414    2   F    10 != _int15
+ + New bound is 28 (gap is 85.11%)
+             188     158k        413    7   F    11 != _int305
+ + New bound is 29 (gap is 84.57%)
+             188     158k        413    7   F    14 != _int305
+ + New bound is 32 (gap is 82.98%)
+             188     158k        413    7   F    15 != _int305
+ + New bound is 33 (gap is 82.45%)
+             188     215k        271    4   F    16 != _int48
+ + New bound is 34 (gap is 81.91%)
+             188     242k        237    7   F    17 != _int323
+ + New bound is 35 (gap is 81.38%)
+             188     239k        397    4   F     1 != _int355
+ + New bound is 36 (gap is 80.85%)
+             188     239k        397    4   F     4 != _int355
+ + New bound is 39 (gap is 79.26%)
+             188     239k        397    4   F     5 != _int355
+ + New bound is 40 (gap is 78.72%)
+             188     257k        419    2   F     6 != _int402
+ + New bound is 41 (gap is 78.19%)
+             188     251k        329    1   F     7 != _int366
+ + New bound is 42 (gap is 77.66%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 188 (gap is 77.66%)
+ ! Best bound             : 42
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 312632013
+ ! Number of fails        : 146288547
+ ! Total memory usage     : 110.6 MB (108.8 MB CP Optimizer + 1.8 MB Concert)
+ ! Time spent in solve    : 1800.00s (1799.94s engine + 0.07s extraction)
+ ! Search speed (br. / s) : 173690.2
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: FEASIBLE (optimality not proven)
+! Best span = 188
+! Labeling: 69 154 52 154 103 137 69 52 35 35 154 154 18 35 1 103 1 69 188 1 86 35 35 1 35 120 86 86 18 69 120 137 1 120 120 103 1 137 52 120 69 120 120 154 69 52 120 1 69 18 137 1 137 18 35 188 1 103 35 171 120 188 137 1 1 86 18 52 52 137 137 103 137 188 18 35 103 1 86 154 35 137 52 18 171 103 1 120 1 137 69 18 18 86 1 35 154 1 18 18 154 120 18 69 86 171 103 18 171 52 154 1 1 18 18 1 154 137 171 86 69 1 120 120 103 52 171 52 137 35 52 103 188 52 69 188 1 188 171 18 86 1 1 35 103 120 154 18 1 103 1 86 154 18 52 154 120 120 69 1 120 86 35 86 69 86 18 52 86 35 171 86 154 1 154 52 137 154 18 103 52 1 86 18 52 188 188 52 52 1 154 18 69 1 69 120 86 86 18 137 103 86 52 18 1 171 120 1 154 103 103 86 103 137 69 103 1 35 1 103 35 137 69 120 154 52 120 18 154 18 35 120 1 52 52 1 137 35 1 171 86 86 52 18 1 188 154 103 171 69 52 86 120 1 86 1 1 35 154 52 103 120 154 18 1 103 188 1 18 86 69 1 52 35 86 35 1 35 103 18 103 35 103 35 35 69 18 120 154 1 171 103 188 69 18 103 171 137 188 137 35 69 137 86 120 103 86 1 1 35 18 137 188 86 103 188 1 35 1 69 18 69 120 1 154 52 103 171 69 137 1 86 171 18 86 35 35 171 52 188 35 18 52 120 35 35 120 18 137 35 188 18 69 154 18 1 69 154 86 171 137 137 120 69 18 18 103 18 86 18 18 137 120 69 103 188 1 103 69 35 69 52 171 1 1 154 69 18 1 1 1 1 103 103 188 69 86 69 18 52 52 52 171 35 120 120 52 103 137 69 18 35 171 120 137 86 18 1 52 137 
+! -------------------------------------------------------- 
+! All verification passed
