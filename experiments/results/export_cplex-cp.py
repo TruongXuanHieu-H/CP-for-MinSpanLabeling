@@ -55,6 +55,8 @@ def parse_log(filepath):
         content
     )
 
+    best_span = int(best_objective) - 1 if best_objective != "-" else "-"
+
     memory_consumed = extract(
         r'!\s*Total memory usage\s*:\s*([\d.]+)\s*MB',
         content
@@ -84,6 +86,7 @@ def parse_log(filepath):
         "Upper bound": upper_bound,
         "Best bound": best_bound,
         "Best objective": best_objective,
+        "Best span": best_span,
         "Memory consumed (MB)": memory_consumed,
         "Time consumed (s)": time_consumed,
         "Optimal found": optimal_found
@@ -130,6 +133,7 @@ def main(root_dir, output_file):
                 "Upper bound",
                 "Best bound",
                 "Best objective",
+                "Best span",
                 "Memory consumed (MB)",
                 "Time consumed (s)",
                 "Optimal found"
