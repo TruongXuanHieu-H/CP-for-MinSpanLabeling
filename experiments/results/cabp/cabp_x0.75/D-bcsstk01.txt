@@ -3,16 +3,15 @@
 ! Lower bound is set to 7
 ! Upper bound is set to 36
 ! Time limit is set to 1800
-! Vertices mode is set to No hole
+! Vertices mode is set to Has hole
 ! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 49 variables, 249 constraints, 1 phase
- ! Presolve      : 36 extractables eliminated, 1 constraint generated
+ ! Minimization problem - 49 variables, 179 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
  !  . Log search space  : 251.8 (before), 251.8 (after)
- !  . Memory usage      : 596.8 kB (before), 596.8 kB (after)
+ !  . Memory usage      : 562.2 kB (before), 562.2 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,31 +19,35 @@
  + New bound is 12
                        12         48    1   F     6 != _int38
  + New bound is 13
- *            36      585  0.04s        2      (gap is 63.89%)
-              36     4980         37    1   F        -
+ *            36      124  0.04s        1      (gap is 63.89%)
+              36     3105         17    1   F     8 != _int43
  + New bound is 25 (gap is 30.56%)
-              36    93327         38    2   F     7 != _int43
+              36    15683         23    2   F     7 != _int45
  + New bound is 26 (gap is 27.78%)
-              36    99771         30    7   F    14 != _int29
+              36    27506         38    2   F    13 != _int29
  + New bound is 27 (gap is 25.00%)
-              36     104k         33    7   F    26 != _int35
+              36    87622         42    1   F    11 != _int29
  + New bound is 28 (gap is 22.22%)
-              36     107k         46    1   F    15 != _int29
+              36     113k         29    2   F    14 != _int29
  + New bound is 29 (gap is 19.44%)
-              36     125k         46    7            -
+              36     131k         28    2   F     6 != _int43
+ + New bound is 30 (gap is 16.67%)
+              36     122k         45    1            -
  + New bound is 36 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 36 (optimal - effective tol. is 0)
  ! Best bound             : 36
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 999206
- ! Number of fails        : 489948
- ! Total memory usage     : 13.2 MB (13.0 MB CP Optimizer + 0.3 MB Concert)
- ! Time spent in solve    : 1.70s (1.68s engine + 0.02s extraction)
- ! Search speed (br. / s) : 594765.5
+ ! Number of branches     : 1033112
+ ! Number of fails        : 501467
+ ! Total memory usage     : 13.2 MB (13.0 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 2.88s (2.88s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 358719.4
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 36
-! Labeling: 15 19 9 27 22 29 26 14 33 16 3 26 28 4 8 5 24 13 10 32 2 10 36 1 28 22 28 20 10 7 34 31 11 2 30 23 6 17 8 21 22 35 12 2 25 10 20 18 
+! Labeling: 1 7 36 13 25 7 25 1 19 31 1 7 7 1 13 19 1 13 19 13 31 13 1 13 13 25 13 7 13 7 19 19 7 31 19 1 1 13 19 7 25 1 19 1 13 19 7 7 
 ! -------------------------------------------------------- 
+! All verification passed

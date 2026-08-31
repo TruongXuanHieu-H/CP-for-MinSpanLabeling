@@ -3,62 +3,41 @@
 ! Lower bound is set to 5
 ! Upper bound is set to 29
 ! Time limit is set to 1800
-! Vertices mode is set to No hole
+! Vertices mode is set to Has hole
 ! Target value mode is set to Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 60 variables, 340 constraints, 1 phase
- ! Presolve      : 29 extractables eliminated, 1 constraint generated
+ ! Minimization problem - 60 variables, 284 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 290.3 (before), 290.3 (after)
- !  . Memory usage      : 392.7 kB (before), 392.7 kB (after)
+ !  . Memory usage      : 350.4 kB (before), 350.4 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
                         0         60                 -
  + New bound is 5
-                        0         60    1   F        -
- + New bound is 8
-                        8         59    1   F     4 != _int29
- + New bound is 9
- *            29       64  0.03s        2      (gap is 68.97%)
-              29    26978         53    4   F        -
- + New bound is 10 (gap is 65.52%)
-              29    26978         53    4   F        -
- + New bound is 11 (gap is 62.07%)
-              29    30228         52    7   F     2 != _int5
- + New bound is 12 (gap is 58.62%)
-              29    30286         52    7   F     4 != _int8
- + New bound is 13 (gap is 55.17%)
-              29    35041         12    4   F    12 != _int57
- + New bound is 14 (gap is 51.72%)
-              29    33967          7    1   F     9 != _int8
- + New bound is 15 (gap is 48.28%)
-              29    35154         57    2   F     3 != _int8
- + New bound is 16 (gap is 44.83%)
-              29    41641         10    4   F     4 != _int48
- + New bound is 17 (gap is 41.38%)
-              29    41835         10    4   F     5 != _int8
+                        2         59    1   F     1 != _int29
+ + New bound is 6
+ *            29       58  0.05s        1      (gap is 79.31%)
+              29     3709         56    2   F     3 != _int56
  + New bound is 18 (gap is 37.93%)
-              29     511k         55    1   F    18 != _int56
- + New bound is 19 (gap is 34.48%)
-              29    3248k         15    1   F     5 != _int5
- + New bound is 20 (gap is 31.03%)
-              29    4413k         55    4            -
+              29    5057k         56    7            -
  + New bound is 29 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 29 (optimal - effective tol. is 0)
  ! Best bound             : 29
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 34982277
- ! Number of fails        : 16727859
- ! Total memory usage     : 20.4 MB (20.2 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 47.76s (47.75s engine + 0.01s extraction)
- ! Search speed (br. / s) : 732613.1
+ ! Number of branches     : 39577657
+ ! Number of fails        : 18775591
+ ! Total memory usage     : 23.9 MB (23.8 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 79.29s (79.27s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 499276.6
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 29
-! Labeling: 19 26 5 24 5 1 5 5 5 16 1 7 1 1 1 2 9 11 13 13 9 9 25 4 17 14 9 1 10 23 13 21 15 22 5 5 13 5 3 6 12 9 9 18 20 1 1 17 27 5 8 1 28 17 1 9 21 29 1 
+! Labeling: 1 1 5 9 5 5 5 5 5 9 13 1 5 5 5 5 1 9 1 17 9 9 29 5 13 9 9 5 1 1 17 25 9 13 5 5 1 1 5 5 17 9 1 1 1 5 13 1 9 5 5 13 1 1 9 9 25 21 5 
 ! -------------------------------------------------------- 
+! All verification passed

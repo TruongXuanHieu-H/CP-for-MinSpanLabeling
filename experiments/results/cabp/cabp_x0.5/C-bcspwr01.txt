@@ -3,16 +3,15 @@
 ! Lower bound is set to 7
 ! Upper bound is set to 19
 ! Time limit is set to 1800
-! Vertices mode is set to No hole
+! Vertices mode is set to Has hole
 ! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 40 variables, 85 constraints, 1 phase
- ! Presolve      : 19 extractables eliminated, 1 constraint generated
+ ! Minimization problem - 40 variables, 49 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.02s (0.00s extraction + 0.02s propagation)
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
  !  . Log search space  : 166.9 (before), 166.9 (after)
- !  . Memory usage      : 378.1 kB (before), 378.1 kB (after)
+ !  . Memory usage      : 344.8 kB (before), 344.8 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,22 +19,23 @@
  + New bound is 12
                         8         39    1   F     4 != _int23
  + New bound is 13
- *            19       46  0.04s        1      (gap is 31.58%)
- *            18      731  0.04s        1      (gap is 27.78%)
-              18      657          2    2            -
+ *            18       46  0.03s        1      (gap is 27.78%)
+              18      422          1    1            -
  + New bound is 18 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
- ! Search completed, 2 solutions found.
+ ! Search completed, 1 solution found.
  ! Best objective         : 18 (optimal - effective tol. is 0)
  ! Best bound             : 18
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 7666
- ! Number of fails        : 3155
- ! Total memory usage     : 6.5 MB (6.4 MB CP Optimizer + 0.1 MB Concert)
- ! Time spent in solve    : 0.04s (0.04s engine + 0.00s extraction)
- ! Search speed (br. / s) : 255533.3
+ ! Number of branches     : 6774
+ ! Number of fails        : 2654
+ ! Total memory usage     : 6.2 MB (6.1 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.03s (0.02s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 338700.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 18
-! Labeling: 3 17 16 18 6 12 10 1 7 1 1 1 7 1 11 14 1 1 13 7 5 7 7 9 1 4 8 2 1 13 15 7 13 1 7 7 1 1 7 
+! Labeling: 13 1 1 1 7 7 1 1 7 18 1 1 7 13 7 1 1 1 13 7 7 7 7 7 1 7 7 13 1 1 1 7 1 1 7 7 1 1 7 
 ! -------------------------------------------------------- 
+! All verification passed

@@ -3,16 +3,15 @@
 ! Lower bound is set to 44
 ! Upper bound is set to 222
 ! Time limit is set to 1800
-! Vertices mode is set to No hole
+! Vertices mode is set to Has hole
 ! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 446 variables, 2127 constraints, 1 phase
- ! Presolve      : 222 extractables eliminated, 1 constraint generated
+ ! Minimization problem - 446 variables, 1685 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.06s (0.06s extraction + 0.00s propagation)
+ ! Initial process time : 0.07s (0.07s extraction + 0.00s propagation)
  !  . Log search space  : 3474.6 (before), 3474.6 (after)
- !  . Memory usage      : 3.5 MB (before), 3.5 MB (after)
+ !  . Memory usage      : 3.3 MB (before), 3.3 MB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,55 +19,65 @@
  + New bound is 86
                        86        445    1   F    43 != _int161
  + New bound is 87
- *           222     345k  22.56s       7      (gap is 60.81%)
-             222     451k        328    1   F    49 != _int180
- + New bound is 90 (gap is 59.46%)
-             222     451k        328    1   F     4 != _int162
- + New bound is 91 (gap is 59.01%)
-             222     443k        378    4   F     5 != _int384
- + New bound is 92 (gap is 58.56%)
-             222     465k        302    2   F     6 != _int98
- + New bound is 93 (gap is 58.11%)
-             222     465k        314    4   F    50 != _int384
- + New bound is 94 (gap is 57.66%)
-             222     474k        314    2   F     8 != _int164
- + New bound is 95 (gap is 57.21%)
-             222     498k        356    7   F     9 != _int395
- + New bound is 96 (gap is 56.76%)
-             222     570k        222    1   F    10 != _int60
- + New bound is 97 (gap is 56.31%)
-             222     538k        357    2   F    54 != _int367
- + New bound is 98 (gap is 55.86%)
-             222     630k        445    1   F    58 != _int5
- + New bound is 102 (gap is 54.05%)
- *           221    1025k  62.52s       1      (gap is 53.85%)
-             221    1501k        445    4   F    62 != _int155
- + New bound is 106 (gap is 52.04%)
-             221    1568k        445    2   F    70 != _int425
- + New bound is 114 (gap is 48.42%)
-             221    2077k        445    1   F    77 != _int327
- + New bound is 121 (gap is 45.25%)
-             221    2343k        445    4   F    81 != _int398
- + New bound is 125 (gap is 43.44%)
- *           220    3749k  234.17s      4      (gap is 43.18%)
-             220    5246k        446    7   F    85 != _int237
- + New bound is 129 (gap is 41.36%)
- ! Time = 347.97s, Average fail depth = 64, Memory usage = 87.8 MB
- ! Current bound is 129 (gap is 41.36%)
+ *           215      510  0.20s        7      (gap is 59.53%)
+             215    91144        445    1   F     3 != _int317
+ + New bound is 90 (gap is 58.14%)
+             215     113k        430    4   F     4 != _int299
+ + New bound is 91 (gap is 57.67%)
+             215     114k        443    7   F    85 != _int259
+ + New bound is 92 (gap is 57.21%)
+             215     132k        345    2   F     6 != _int383
+ + New bound is 93 (gap is 56.74%)
+             215     194k        395    1   F     7 != _int312
+ + New bound is 94 (gap is 56.28%)
+             215     288k        444    2   F     8 != _int244
+ + New bound is 95 (gap is 55.81%)
+             215     334k        387    1   F     9 != _int316
+ + New bound is 96 (gap is 55.35%)
+             215     313k        415    2   F    54 != _int281
+ + New bound is 98 (gap is 54.42%)
+             215     496k        442    2   F    56 != _int244
+ + New bound is 100 (gap is 53.49%)
+             215     601k        445    4   F    60 != _int246
+ + New bound is 104 (gap is 51.63%)
+             215     859k        397    4   F    88 != _int100
+ + New bound is 106 (gap is 50.70%)
+             215    1101k        277    2   F    64 != _int283
+ + New bound is 108 (gap is 49.77%)
+             215    1124k        445    4   F    30 != _int100
+ + New bound is 110 (gap is 48.84%)
+             215    1328k        443    4   F    51 != _int100
+ + New bound is 112 (gap is 47.91%)
+             215    1917k        445    1   F    69 != _int364
+ + New bound is 113 (gap is 47.44%)
+             215    1939k        334    1   F    71 != _int370
+ + New bound is 115 (gap is 46.51%)
+             215    3711k        444    7   F    75 != _int286
+ + New bound is 119 (gap is 44.65%)
+ ! Time = 286.95s, Average fail depth = 31, Memory usage = 79.9 MB
+ ! Current bound is 119 (gap is 44.65%)
  !          Best Branches  Non-fixed    W       Branch decision
- *           219   13774k  925.17s      7      (gap is 41.10%)
+             215    9105k        444    7   F    79 != _int300
+ + New bound is 123 (gap is 42.79%)
+             215   12688k        444    2   F    68 != _int49
+ + New bound is 127 (gap is 40.93%)
+             215   12529k        360    7   F    84 != _int182
+ + New bound is 128 (gap is 40.47%)
+ *           214   15033k  1313.07s     7      (gap is 40.19%)
  ! ----------------------------------------------------------------------------
- ! Search terminated by limit, 4 solutions found.
- ! Best objective         : 219 (gap is 41.10%)
- ! Best bound             : 129
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 214 (gap is 40.19%)
+ ! Best bound             : 128
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 190385844
- ! Number of fails        : 81531744
- ! Total memory usage     : 160.8 MB (158.0 MB CP Optimizer + 2.7 MB Concert)
- ! Time spent in solve    : 1800.06s (1800.01s engine + 0.06s extraction)
- ! Search speed (br. / s) : 105769.3
+ ! Number of branches     : 164462990
+ ! Number of fails        : 73532586
+ ! Total memory usage     : 150.1 MB (148.5 MB CP Optimizer + 1.6 MB Concert)
+ ! Time spent in solve    : 1800.02s (1799.96s engine + 0.07s extraction)
+ ! Search speed (br. / s) : 91370.4
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
-! Best span = 219
-! Labeling: 136 179 216 71 47 116 29 2 85 41 180 111 218 43 40 97 25 216 135 144 67 46 45 61 43 208 4 18 102 56 215 132 157 90 183 216 194 7 80 185 130 215 43 91 46 202 23 176 218 86 101 4 31 4 187 141 83 180 4 77 4 46 104 46 30 173 153 173 144 127 117 218 62 174 46 35 151 11 91 172 139 132 65 157 216 48 172 112 34 46 207 54 170 13 179 96 180 128 215 172 155 140 115 168 175 180 20 32 50 33 178 189 85 180 190 134 2 21 4 22 136 51 142 69 203 143 212 172 3 216 108 92 148 90 6 155 198 171 90 199 1 136 3 3 87 113 195 187 216 108 135 70 89 55 58 14 84 178 99 5 128 163 161 125 43 81 130 167 131 121 151 177 117 89 57 135 216 173 138 178 114 32 59 4 45 112 16 133 129 187 28 47 42 175 4 132 46 154 178 44 94 93 89 166 215 64 22 136 216 48 9 139 106 88 190 15 3 162 79 40 78 132 215 184 178 193 218 177 136 123 129 122 173 188 158 178 109 147 103 73 205 12 101 24 46 180 172 89 2 118 74 40 186 134 88 47 164 126 57 179 152 210 60 150 47 134 219 61 104 197 36 180 204 173 136 90 63 38 146 171 90 215 136 47 86 4 92 134 46 175 82 179 124 132 120 48 128 37 86 214 160 52 104 86 42 119 100 39 191 132 47 215 215 4 175 57 162 133 177 135 89 135 216 134 180 98 135 15 123 19 71 90 218 147 107 10 206 86 134 216 92 46 161 107 174 95 201 53 92 169 91 47 165 89 92 47 192 129 100 8 116 133 48 100 66 35 89 4 42 65 18 3 89 72 58 26 91 130 47 145 173 176 178 89 144 83 129 76 215 217 91 42 175 91 49 211 4 3 200 87 129 179 181 105 129 196 85 85 17 209 213 137 173 144 45 135 198 92 4 45 215 172 3 75 110 27 215 175 42 90 156 133 89 159 216 28 135 178 68 104 149 42 182 172 43 
+! Status: FEASIBLE (optimality not proven)
+! Best span = 214
+! Labeling: 44 1 173 44 130 173 88 44 2 173 130 44 44 44 46 132 46 130 44 174 130 1 130 45 45 44 87 173 89 174 173 130 44 44 1 1 1 87 130 87 2 1 87 130 44 45 87 45 131 2 46 132 3 44 1 3 3 1 44 132 44 44 130 131 87 87 3 87 130 1 44 1 45 87 173 88 2 44 130 45 87 2 173 88 2 44 44 131 46 130 130 1 45 44 87 130 1 130 174 173 87 1 2 88 88 130 130 87 174 89 1 87 87 1 1 44 87 44 44 87 87 130 130 44 87 44 1 130 44 173 2 131 2 130 2 3 1 87 130 1 87 3 87 1 130 131 45 1 173 131 88 87 44 46 1 173 131 1 87 2 130 87 2 1 3 87 131 130 45 130 44 46 44 45 87 44 174 87 130 1 130 1 87 1 44 2 44 44 45 89 1 1 45 87 44 87 87 131 1 87 130 173 130 87 130 45 130 87 1 45 46 44 44 130 2 87 131 87 130 131 2 44 1 174 173 88 174 87 44 87 130 88 87 130 1 1 88 87 130 2 46 1 130 1 130 88 46 130 3 1 130 44 87 130 89 1 44 130 2 173 3 3 130 131 1 87 174 130 131 45 89 174 87 87 87 130 87 44 44 130 130 1 44 173 130 3 131 173 87 87 87 1 87 44 44 44 173 87 173 45 173 88 130 88 45 130 130 130 44 44 1 88 173 2 130 46 87 88 87 88 130 87 1 44 174 174 46 87 1 88 130 2 44 44 2 45 87 174 87 174 1 45 87 44 131 44 87 45 3 130 131 88 131 131 130 1 87 44 3 173 130 87 44 1 130 87 130 131 1 2 214 87 44 1 173 1 130 130 174 46 88 89 1 130 87 44 2 44 174 1 130 173 87 130 45 131 44 87 131 130 131 87 130 131 3 1 2 87 2 1 131 87 45 44 44 2 173 130 44 174 173 87 2 130 2 87 88 87 88 130 1 87 1 173 88 173 3 173 130 130 87 45 1 44 87 
 ! -------------------------------------------------------- 
+! All verification passed

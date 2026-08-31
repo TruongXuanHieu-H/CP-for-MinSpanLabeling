@@ -5,9 +5,9 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/../../.." && pwd)"
 
 build_dir="$ROOT_DIR/build"
 dataset_dir="$ROOT_DIR/benchmarks/abp"
-report_dir="$ROOT_DIR/experiments/results/abp/abp_x0.5"
+report_dir="$ROOT_DIR/experiments/results/abp/abp_x0.5_has_hole"
 time_limit="1800"
-vertices_mode="no_hole"
+vertices_mode="has_hole"
 target_value_mode="abp"
 
 mkdir -p "$report_dir"

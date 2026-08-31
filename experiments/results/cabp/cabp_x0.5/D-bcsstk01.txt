@@ -3,16 +3,15 @@
 ! Lower bound is set to 5
 ! Upper bound is set to 24
 ! Time limit is set to 1800
-! Vertices mode is set to No hole
+! Vertices mode is set to Has hole
 ! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 49 variables, 225 constraints, 1 phase
- ! Presolve      : 24 extractables eliminated, 1 constraint generated
+ ! Minimization problem - 49 variables, 179 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 223.2 (before), 223.2 (after)
- !  . Memory usage      : 595.9 kB (before), 595.9 kB (after)
+ !  . Memory usage      : 562.2 kB (before), 562.2 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,25 +19,33 @@
  + New bound is 8
                         8         48    1   F     4 != _int38
  + New bound is 9
- *            24      374  0.04s        1      (gap is 62.50%)
-              24     3963         16    7   F     1 != _int45
+ *            24      108  0.06s        1      (gap is 62.50%)
+              24     2681          1    1   F     3 != _int45
  + New bound is 17 (gap is 29.17%)
-              24     6315         45    2   F     2 != _int44
- + New bound is 22 (gap is 8.33%)
-              24    15939         45    1            -
+              24    13554         44    2   F     8 != _int29
+ + New bound is 18 (gap is 25.00%)
+              24    15150         44    7   F    10 != _int45
+ + New bound is 19 (gap is 20.83%)
+              24    19851         45    4   F    17 != _int35
+ + New bound is 20 (gap is 16.67%)
+              24    20795         37    1   F        -
+ + New bound is 21 (gap is 12.50%)
+              24    19857         45    7            -
  + New bound is 24 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 24 (optimal - effective tol. is 0)
  ! Best bound             : 24
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 122746
- ! Number of fails        : 59372
- ! Total memory usage     : 12.6 MB (12.4 MB CP Optimizer + 0.2 MB Concert)
- ! Time spent in solve    : 0.28s (0.28s engine + 0.00s extraction)
- ! Search speed (br. / s) : 454614.8
+ ! Number of branches     : 159866
+ ! Number of fails        : 77431
+ ! Total memory usage     : 12.0 MB (11.8 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.43s (0.42s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 380633.3
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 24
-! Labeling: 24 9 14 1 15 23 23 19 18 19 8 13 15 3 6 20 16 19 5 7 3 11 19 11 7 11 23 17 23 17 7 4 12 15 10 21 6 2 11 23 19 7 13 3 1 13 15 22 
+! Labeling: 1 5 24 9 17 5 17 1 13 21 1 5 5 1 9 13 1 9 13 9 21 9 1 9 9 17 9 5 9 5 13 13 5 21 13 1 1 9 13 5 17 1 13 1 9 13 5 5 
 ! -------------------------------------------------------- 
+! All verification passed

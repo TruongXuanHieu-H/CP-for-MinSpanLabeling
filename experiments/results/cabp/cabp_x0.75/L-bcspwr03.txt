@@ -3,16 +3,15 @@
 ! Lower bound is set to 22
 ! Upper bound is set to 88
 ! Time limit is set to 1800
-! Vertices mode is set to No hole
+! Vertices mode is set to Has hole
 ! Target value mode is set to Cyclic Antibandwidth
  ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
- ! Minimization problem - 119 variables, 356 constraints, 1 phase
- ! Presolve      : 88 extractables eliminated, 1 constraint generated
+ ! Minimization problem - 119 variables, 182 constraints, 1 phase
  ! TimeLimit            = 1800
  ! LogVerbosity         = Terse
- ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
  !  . Log search space  : 766.8 (before), 766.8 (after)
- !  . Memory usage      : 749.1 kB (before), 749.1 kB (after)
+ !  . Memory usage      : 638.5 kB (before), 638.5 kB (after)
  ! Using parallel search with 8 workers.
  ! ----------------------------------------------------------------------------
  !          Best Branches  Non-fixed    W       Branch decision
@@ -20,27 +19,27 @@
  + New bound is 42
                        42        118    1   F    21 != _int29
  + New bound is 43
- *            84      160  0.08s        1      (gap is 48.81%)
-              84     3294         71    1   F    62 != _int58
+ *            84      200  0.06s        1      (gap is 48.81%)
+              84     2976        117    2   F    63 != _int62
  + New bound is 64 (gap is 23.81%)
-              84     7895        117    2   F    21 != _int35
- + New bound is 75 (gap is 10.71%)
-              84    12047        116    2   F    59 != _int62
- + New bound is 81 (gap is 3.57%)
-              84    12073        116    2   F    59 != _int58
+              84    15998        117    2   F    40 != _int35
+ + New bound is 83 (gap is 1.19%)
+              84    20630        118    1            -
  + New bound is 84 (gap is 0.00%)
  ! ----------------------------------------------------------------------------
  ! Search completed, 1 solution found.
  ! Best objective         : 84 (optimal - effective tol. is 0)
  ! Best bound             : 84
  ! ----------------------------------------------------------------------------
- ! Number of branches     : 143780
- ! Number of fails        : 66523
- ! Total memory usage     : 17.5 MB (17.1 MB CP Optimizer + 0.4 MB Concert)
- ! Time spent in solve    : 0.37s (0.36s engine + 0.01s extraction)
- ! Search speed (br. / s) : 399388.9
+ ! Number of branches     : 158398
+ ! Number of fails        : 71924
+ ! Total memory usage     : 15.0 MB (14.8 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.52s (0.50s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 316796.0
  ! ----------------------------------------------------------------------------
 ! --------------------------------------------------------
+! Status: OPTIMAL
 ! Best span = 84
-! Labeling: 1 43 80 43 16 1 1 49 22 25 58 45 43 30 64 4 22 26 43 24 22 29 22 38 22 48 22 22 1 35 40 6 2 67 44 36 3 1 78 75 1 56 65 84 33 14 72 77 42 15 22 22 11 70 61 1 76 43 68 43 32 62 46 83 22 21 22 59 51 22 8 1 57 41 53 71 63 1 9 1 81 22 7 12 82 50 52 37 22 19 13 20 74 73 1 22 54 27 10 18 1 22 66 17 1 55 31 79 39 69 23 28 47 34 60 5 22 1 
+! Labeling: 1 43 1 43 22 1 1 43 22 22 22 43 43 22 64 1 22 22 43 22 22 22 22 22 22 43 22 22 1 22 43 1 1 22 43 22 1 1 1 1 1 1 22 84 22 1 1 1 1 43 22 22 43 1 22 1 1 43 1 43 22 22 43 1 22 21 22 1 1 22 43 1 1 1 1 22 22 1 1 1 1 22 22 1 1 1 1 22 22 22 43 22 22 1 1 22 1 22 43 43 1 22 22 1 1 1 22 1 22 22 22 22 43 22 1 43 22 1 
 ! -------------------------------------------------------- 
+! All verification passed
