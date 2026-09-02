@@ -1,0 +1,77 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/O-impcol_d.mtx.rnd
+! Target value is set to 105
+! Lower bound is set to 106
+! Upper bound is set to 425
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 426 variables, 2118 constraints, 1 phase
+ ! Presolve      : 425 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.09s (0.09s extraction + 0.00s propagation)
+ !  . Log search space  : 3717.6 (before), 3717.6 (after)
+ !  . Memory usage      : 3.1 MB (before), 3.1 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        426                 -
+ + New bound is 210
+ *           425     260k  51.11s       2      (gap is 50.59%)
+ *           424     336k  71.40s       7      (gap is 50.47%)
+ *           423     811k  211.84s      2      (gap is 50.35%)
+             423    1905k        426    4   F   108 != _int79
+ + New bound is 214 (gap is 49.41%)
+             423    1905k        425    4   F   109 != _int79
+ + New bound is 215 (gap is 49.17%)
+             423    2134k         64    1   F        -
+ + New bound is 219 (gap is 48.23%)
+             423    2134k         64    1   F        -
+ + New bound is 220 (gap is 47.99%)
+             423    2298k        314    1   F        -
+ + New bound is 224 (gap is 47.04%)
+             423    2298k        314    1   F        -
+ + New bound is 225 (gap is 46.81%)
+             423    2380k        387    1   F        -
+ + New bound is 229 (gap is 45.86%)
+             423    2380k        387    1   F        -
+ + New bound is 230 (gap is 45.63%)
+             423    3000k         67    1   F        -
+ + New bound is 234 (gap is 44.68%)
+             423    3000k         67    1   F        -
+ + New bound is 235 (gap is 44.44%)
+             423    3371k        351    1   F        -
+ + New bound is 238 (gap is 43.74%)
+             423    3371k        351    1   F        -
+ + New bound is 239 (gap is 43.50%)
+             423    3452k        366    1   F        -
+ + New bound is 242 (gap is 42.79%)
+             423    3452k        366    1   F        -
+ + New bound is 243 (gap is 42.55%)
+             423    3842k        372    1   F        -
+ + New bound is 246 (gap is 41.84%)
+             423    3842k        372    1   F        -
+ + New bound is 247 (gap is 41.61%)
+ ! Time = 947.86s, Average fail depth = 21, Memory usage = 106.4 MB
+ ! Current bound is 247 (gap is 41.61%)
+ !          Best Branches  Non-fixed    W       Branch decision
+             423    4357k         97    1   F        -
+ + New bound is 250 (gap is 40.90%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 3 solutions found.
+ ! Best objective         : 423 (gap is 40.90%)
+ ! Best bound             : 250
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 55982913
+ ! Number of fails        : 26686239
+ ! Total memory usage     : 196.2 MB (192.8 MB CP Optimizer + 3.4 MB Concert)
+ ! Time spent in solve    : 1800.11s (1800.02s engine + 0.09s extraction)
+ ! Search speed (br. / s) : 31101.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: FEASIBLE (optimality not proven)
+! Best span = 423
+! Labeling: 32 35 115 243 229 390 312 236 318 253 267 209 288 242 274 152 235 409 158 82 99 401 86 16 168 262 207 157 36 396 128 217 30 338 166 1 227 109 219 31 393 377 188 421 91 298 238 340 184 380 44 327 258 210 172 402 319 186 124 320 350 265 78 144 160 283 395 277 369 204 330 21 15 167 339 74 140 329 376 88 343 240 12 286 263 130 119 57 39 116 317 178 237 304 191 169 148 149 211 367 200 18 374 85 346 62 311 19 282 127 234 361 3 352 59 138 107 287 103 397 294 134 326 213 264 362 75 325 136 419 71 233 150 359 64 322 342 285 216 8 388 289 101 193 93 256 310 201 179 268 384 333 344 302 53 151 43 284 143 214 156 292 114 159 272 266 321 174 417 170 7 373 271 212 295 335 290 386 398 366 68 56 226 351 331 357 117 10 252 198 328 46 218 42 360 254 47 73 414 300 108 118 25 411 147 141 334 55 405 67 196 220 92 194 176 80 177 303 65 76 261 305 249 125 420 48 299 391 83 208 162 154 404 28 222 368 38 89 296 365 341 126 17 54 297 132 225 413 245 133 155 146 270 23 394 381 337 224 348 315 161 356 34 336 199 202 293 308 408 251 129 407 98 332 406 112 111 72 221 41 372 403 375 183 20 383 244 423 412 37 385 14 171 230 291 163 79 63 27 259 205 215 248 345 203 241 273 190 97 389 4 33 9 2 276 94 260 84 418 370 189 378 137 95 314 410 187 281 247 306 6 26 392 135 255 354 382 231 60 51 410 106 347 309 139 145 185 197 122 22 422 153 356 96 182 250 52 232 269 275 40 102 173 313 180 49 165 364 195 104 175 113 121 400 278 301 279 223 387 45 379 77 24 416 257 355 100 181 70 324 131 81 358 11 105 307 399 123 228 323 87 90 69 29 415 239 192 50 61 371 246 110 280 5 206 120 353 142 58 13 316 164 349 363 66 
+! -------------------------------------------------------- 
+! All verification passed

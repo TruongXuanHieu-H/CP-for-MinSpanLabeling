@@ -1,0 +1,37 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/P-can__445.mtx.rnd
+! Target value is set to 90
+! Lower bound is set to 91
+! Upper bound is set to 445
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 446 variables, 2573 constraints, 1 phase
+ ! Presolve      : 445 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.09s (0.09s extraction + 0.00s propagation)
+ !  . Log search space  : 3922.4 (before), 3922.4 (after)
+ !  . Memory usage      : 1.4 MB (before), 1.4 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        446                 -
+ + New bound is 91
+                        0        446    1   F        -
+ + New bound is 180
+                      180        445    1   F    90 != _int160
+ + New bound is 181
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 181
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 74782448
+ ! Number of fails        : 33568657
+ ! Total memory usage     : 279.5 MB (276.4 MB CP Optimizer + 3.1 MB Concert)
+ ! Time spent in solve    : 1800.05s (1799.96s engine + 0.09s extraction)
+ ! Search speed (br. / s) : 41547.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Search stopped without finding a feasible solution (e.g., time limit reached)
+! --------------------------------------------------------

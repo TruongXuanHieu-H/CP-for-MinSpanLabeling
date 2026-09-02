@@ -1,0 +1,55 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/A-pores_1.mtx.rnd
+! Target value is set to 6
+! Lower bound is set to 7
+! Upper bound is set to 30
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 31 variables, 164 constraints, 1 phase
+ ! Presolve      : 30 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 150.5 (before), 150.5 (after)
+ !  . Memory usage      : 453.4 kB (before), 453.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         31                 -
+ + New bound is 12
+                       12         30    1   F     6 != _int17
+ + New bound is 13
+ *            30     2055  0.09s        3      (gap is 56.67%)
+              30     3073         29    4   F     9 != _int13
+ + New bound is 22 (gap is 26.67%)
+ *            29     5973  0.18s        4      (gap is 24.14%)
+ *            28    10660  0.31s        4      (gap is 21.43%)
+ *            27    12881  0.38s        4      (gap is 18.52%)
+              27    22298          2    2   F    10 != _int2
+ + New bound is 23 (gap is 14.81%)
+              27    24267         11    7   F     9 != _int24
+ + New bound is 24 (gap is 11.11%)
+              27    2707k         12    4   F    23 != _int14
+ + New bound is 25 (gap is 7.41%)
+              27    2708k         20    4   F    20 != _int20
+ + New bound is 26 (gap is 3.70%)
+              27    2643k         23    1            -
+ + New bound is 27 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 4 solutions found.
+ ! Best objective         : 27 (optimal - effective tol. is 0)
+ ! Best bound             : 27
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 21607564
+ ! Number of fails        : 10742856
+ ! Total memory usage     : 21.1 MB (20.9 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 63.84s (63.84s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 338464.3
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 27
+! Labeling: 6 19 2 22 26 15 20 5 9 27 13 14 19 18 21 11 10 8 17 7 5 24 21 25 4 1 16 3 12 23 
+! -------------------------------------------------------- 
+! All verification passed

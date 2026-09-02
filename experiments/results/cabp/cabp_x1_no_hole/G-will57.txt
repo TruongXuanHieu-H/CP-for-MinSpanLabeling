@@ -1,0 +1,61 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/G-will57.mtx.rnd
+! Target value is set to 11
+! Lower bound is set to 12
+! Upper bound is set to 57
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 58 variables, 242 constraints, 1 phase
+ ! Presolve      : 57 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 336.7 (before), 336.7 (after)
+ !  . Memory usage      : 556.2 kB (before), 556.2 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         58                 -
+ + New bound is 22
+                       22         57    1   F    11 != _int34
+ + New bound is 23
+ *            57     2094  0.09s        1      (gap is 59.65%)
+ *            55     2031  0.09s        2      (gap is 58.18%)
+              55     6120         57    2   F     6 != _int11
+ + New bound is 40 (gap is 27.27%)
+              55    21445         48    4   F    18 != _int50
+ + New bound is 41 (gap is 25.45%)
+              55    25753         48    1   F    30 != _int49
+ + New bound is 42 (gap is 23.64%)
+              55    26483          2    7   F    18 != _int50
+ + New bound is 43 (gap is 21.82%)
+              55    32975         45    4   F    18 != _int50
+ + New bound is 44 (gap is 20.00%)
+              55    33047         56    4   F    18 != _int50
+ + New bound is 45 (gap is 18.18%)
+              55    47527         40    1   F    23 != _int49
+ + New bound is 46 (gap is 16.36%)
+              55    75252         48    4   F    13 != _int50
+ + New bound is 47 (gap is 14.55%)
+              55    69890         44    1   F        -
+ + New bound is 48 (gap is 12.73%)
+              55    78347         56    2            -
+ + New bound is 55 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 55 (optimal - effective tol. is 0)
+ ! Best bound             : 55
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 646772
+ ! Number of fails        : 314164
+ ! Total memory usage     : 13.7 MB (13.4 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 1.58s (1.58s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 411956.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 55
+! Labeling: 22 52 25 17 7 51 40 29 42 11 13 5 39 9 43 14 20 21 37 31 1 23 16 45 54 53 18 47 46 3 26 10 15 8 12 12 41 44 23 55 32 36 33 30 2 34 24 28 49 19 35 6 4 38 50 27 48 
+! -------------------------------------------------------- 
+! All verification passed

@@ -1,0 +1,44 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/C-bcspwr01.mtx.rnd
+! Target value is set to 17
+! Lower bound is set to 18
+! Upper bound is set to 39
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 40 variables, 125 constraints, 1 phase
+ ! Presolve      : 39 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 206.4 (before), 206.4 (after)
+ !  . Memory usage      : 346.4 kB (before), 346.4 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         40                 -
+ + New bound is 18
+                        0         40    1   F        -
+ + New bound is 34
+                        6         39    1   F     3 != _int22
+ + New bound is 35
+ *            39     142k  3.11s        5      (gap is 10.26%)
+              39     154k         22    1   F     1 != _int2
+ + New bound is 36 (gap is 7.69%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 39 (gap is 7.69%)
+ ! Best bound             : 36
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 631688493
+ ! Number of fails        : 310771570
+ ! Total memory usage     : 219.7 MB (219.6 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 1800.02s (1800.02s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 350936.1
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: FEASIBLE (optimality not proven)
+! Best span = 39
+! Labeling: 17 20 23 11 21 34 28 1 37 24 9 14 7 25 30 36 26 39 22 12 27 31 18 4 16 6 2 19 10 38 35 5 8 13 33 3 29 15 32 
+! -------------------------------------------------------- 
+! All verification passed

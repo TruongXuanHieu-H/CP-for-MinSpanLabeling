@@ -1,0 +1,37 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/I-ash85.mtx.rnd
+! Target value is set to 23
+! Lower bound is set to 24
+! Upper bound is set to 85
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 86 variables, 390 constraints, 1 phase
+ ! Presolve      : 85 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 549.3 (before), 549.3 (after)
+ !  . Memory usage      : 428.7 kB (before), 428.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         86                 -
+ + New bound is 24
+                        0         86    1            -
+ + New bound is 46
+                       40         85    1   F    20 != _int55
+ + New bound is 47
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 47
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 350242282
+ ! Number of fails        : 171188155
+ ! Total memory usage     : 186.5 MB (186.2 MB CP Optimizer + 0.3 MB Concert)
+ ! Time spent in solve    : 1800.02s (1800.00s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 194579.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Search stopped without finding a feasible solution (e.g., time limit reached)
+! --------------------------------------------------------

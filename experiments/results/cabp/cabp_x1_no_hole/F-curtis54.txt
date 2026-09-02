@@ -1,0 +1,48 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/F-curtis54.mtx.rnd
+! Target value is set to 10
+! Lower bound is set to 11
+! Upper bound is set to 54
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 55 variables, 233 constraints, 1 phase
+ ! Presolve      : 54 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 314.9 (before), 314.9 (after)
+ !  . Memory usage      : 555.7 kB (before), 555.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         55                 -
+ + New bound is 20
+                       20         54    1   F    10 != _int25
+ + New bound is 21
+ *            50      260  0.04s        1      (gap is 58.00%)
+              50     5912         27    4   F     2 != _int10
+ + New bound is 36 (gap is 28.00%)
+              50     5080         54    7   F    27 != _int5
+ + New bound is 38 (gap is 24.00%)
+              50    13128         53    2   F    27 != _int8
+ + New bound is 48 (gap is 4.00%)
+              50    15020         53    2   F    29 != _int9
+ + New bound is 50 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 50 (optimal - effective tol. is 0)
+ ! Best bound             : 50
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 140829
+ ! Number of fails        : 67986
+ ! Total memory usage     : 12.4 MB (12.2 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.38s (0.38s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 380618.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 50
+! Labeling: 31 50 21 9 2 43 11 45 19 47 13 24 26 27 32 28 16 12 1 14 22 44 10 3 36 25 4 7 35 49 20 41 8 30 29 18 46 39 6 15 40 48 37 11 41 34 1 38 33 42 17 23 5 1 
+! -------------------------------------------------------- 
+! All verification passed

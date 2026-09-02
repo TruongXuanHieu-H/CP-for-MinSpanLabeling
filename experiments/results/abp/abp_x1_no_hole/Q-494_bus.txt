@@ -1,0 +1,37 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/Q-494_bus.mtx.rnd
+! Target value is set to 227
+! Lower bound is set to 228
+! Upper bound is set to 494
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 495 variables, 1575 constraints, 1 phase
+ ! Presolve      : 494 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
+ !  . Log search space  : 4420.5 (before), 4420.5 (after)
+ !  . Memory usage      : 1.2 MB (before), 1.2 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        495                 -
+ + New bound is 228
+                        0        495    1   F        -
+ + New bound is 454
+                       40        494    2   F    20 != _int473
+ + New bound is 455
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 455
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 49749615
+ ! Number of fails        : 23654185
+ ! Total memory usage     : 209.5 MB (206.4 MB CP Optimizer + 3.1 MB Concert)
+ ! Time spent in solve    : 1800.06s (1799.99s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 27639.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Search stopped without finding a feasible solution (e.g., time limit reached)
+! --------------------------------------------------------

@@ -1,0 +1,35 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/R-dwt__503.mtx.rnd
+! Target value is set to 62
+! Lower bound is set to 63
+! Upper bound is set to 503
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 504 variables, 3769 constraints, 1 phase
+ ! Presolve      : 503 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.17s (0.17s extraction + 0.00s propagation)
+ !  . Log search space  : 4521.7 (before), 4521.7 (after)
+ !  . Memory usage      : 5.7 MB (before), 5.7 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        504                 -
+ + New bound is 124
+                      124        503    1   F    62 != _int453
+ + New bound is 125
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 125
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 74443213
+ ! Number of fails        : 35835193
+ ! Total memory usage     : 343.9 MB (338.5 MB CP Optimizer + 5.4 MB Concert)
+ ! Time spent in solve    : 1800.13s (1799.97s engine + 0.17s extraction)
+ ! Search speed (br. / s) : 41358.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Search stopped without finding a feasible solution (e.g., time limit reached)
+! --------------------------------------------------------

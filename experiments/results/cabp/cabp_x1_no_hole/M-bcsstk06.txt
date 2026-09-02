@@ -1,0 +1,35 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/M-bcsstk06.mtx.rnd
+! Target value is set to 33
+! Lower bound is set to 34
+! Upper bound is set to 420
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 421 variables, 4561 constraints, 1 phase
+ ! Presolve      : 420 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.17s (0.17s extraction + 0.00s propagation)
+ !  . Log search space  : 3667.5 (before), 3667.5 (after)
+ !  . Memory usage      : 7.2 MB (before), 7.2 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        421                 -
+ + New bound is 66
+                       66        420    1   F    33 != _int149
+ + New bound is 67
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 67
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 66591574
+ ! Number of fails        : 31888234
+ ! Total memory usage     : 355.7 MB (349.8 MB CP Optimizer + 5.8 MB Concert)
+ ! Time spent in solve    : 1800.15s (1799.99s engine + 0.17s extraction)
+ ! Search speed (br. / s) : 36995.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Search stopped without finding a feasible solution (e.g., time limit reached)
+! --------------------------------------------------------

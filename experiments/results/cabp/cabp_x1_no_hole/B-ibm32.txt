@@ -1,0 +1,54 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/B-ibm32.mtx.rnd
+! Target value is set to 8
+! Lower bound is set to 9
+! Upper bound is set to 32
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 33 variables, 155 constraints, 1 phase
+ ! Presolve      : 32 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.00s (0.00s extraction + 0.00s propagation)
+ !  . Log search space  : 163.1 (before), 163.1 (after)
+ !  . Memory usage      : 453.0 kB (before), 453.0 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         33                 -
+ + New bound is 16
+                       16         32    1   F     8 != _int4
+ + New bound is 17
+ *            32     3102  0.16s        1      (gap is 46.88%)
+              32     6459         20    1   F     8 != _int7
+ + New bound is 25 (gap is 21.88%)
+              32    19254         16    7   F     1 != _int1
+ + New bound is 26 (gap is 18.75%)
+              32    25242         24    4   F     1 != _int0
+ + New bound is 27 (gap is 15.62%)
+              32     300k         23    1   F     5 != _int0
+ + New bound is 28 (gap is 12.50%)
+              32     771k         23    1   F     4 != _int6
+ + New bound is 29 (gap is 9.38%)
+              32    1220k         23    7   F    27 != _int11
+ + New bound is 30 (gap is 6.25%)
+              32    1251k         24    1            -
+ + New bound is 32 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 32 (optimal - effective tol. is 0)
+ ! Best bound             : 32
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 10064064
+ ! Number of fails        : 4975928
+ ! Total memory usage     : 13.6 MB (13.5 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 33.61s (33.61s engine + 0.00s extraction)
+ ! Search speed (br. / s) : 299525.7
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 32
+! Labeling: 32 2 29 3 1 7 16 27 20 11 28 4 12 24 15 8 18 31 22 9 26 19 21 25 10 17 23 14 30 6 13 5 
+! -------------------------------------------------------- 
+! All verification passed

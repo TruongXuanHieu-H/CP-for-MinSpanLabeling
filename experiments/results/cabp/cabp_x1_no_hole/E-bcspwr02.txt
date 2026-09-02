@@ -1,0 +1,42 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/cabp/E-bcspwr02.mtx.rnd
+! Target value is set to 16
+! Lower bound is set to 17
+! Upper bound is set to 49
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Cyclic Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 50 variables, 158 constraints, 1 phase
+ ! Presolve      : 49 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 277.0 (before), 277.0 (after)
+ !  . Memory usage      : 421.7 kB (before), 421.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         50                 -
+ + New bound is 32
+                       18         49    1   F     9 != _int35
+ + New bound is 33
+ *            48       74  0.05s        1      (gap is 31.25%)
+              48     1397          3    1            -
+ + New bound is 48 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 48 (optimal - effective tol. is 0)
+ ! Best bound             : 48
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14404
+ ! Number of fails        : 6477
+ ! Total memory usage     : 8.1 MB (8.0 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.07s (0.06s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 288080.0
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 48
+! Labeling: 30 48 32 8 16 22 34 46 13 43 37 35 19 23 20 12 10 11 1 7 21 5 45 28 27 33 2 40 9 42 31 18 44 41 47 39 6 14 36 15 1 3 17 38 29 4 24 26 25 
+! -------------------------------------------------------- 
+! All verification passed

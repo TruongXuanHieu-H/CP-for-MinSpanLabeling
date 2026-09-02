@@ -1,0 +1,52 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/L-bcspwr03.mtx.rnd
+! Target value is set to 39
+! Lower bound is set to 40
+! Upper bound is set to 118
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 119 variables, 416 constraints, 1 phase
+ ! Presolve      : 118 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 815.2 (before), 815.2 (after)
+ !  . Memory usage      : 496.1 kB (before), 496.1 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        119                 -
+ + New bound is 40
+                        0        119    1            -
+ + New bound is 77
+                        0        119    1   F        -
+ + New bound is 78
+ *           118     3464  0.17s        1      (gap is 33.90%)
+             118     7093        118    1   F    17 != _int61
+ + New bound is 99 (gap is 16.10%)
+             118    10809        116    1   F    20 != _int61
+ + New bound is 100 (gap is 15.25%)
+             118    10152        117    7   F    68 != _int62
+ + New bound is 109 (gap is 7.63%)
+             118    13215        117    2   F    73 != _int61
+ + New bound is 114 (gap is 3.39%)
+             118    20351        117    1            -
+ + New bound is 118 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 118 (optimal - effective tol. is 0)
+ ! Best bound             : 118
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 148511
+ ! Number of fails        : 70857
+ ! Total memory usage     : 15.6 MB (15.2 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 0.72s (0.72s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 209170.4
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 118
+! Labeling: 44 11 22 107 71 93 38 51 49 3 98 46 79 85 1 92 64 84 109 114 86 81 68 99 108 17 83 74 29 31 77 21 4 52 67 66 35 89 48 88 80 72 53 42 82 56 30 37 62 102 14 28 103 112 58 27 105 15 94 116 25 117 75 20 13 87 111 60 45 76 5 55 23 61 63 9 16 6 41 69 34 118 18 59 36 50 39 70 91 73 78 47 24 32 40 54 19 95 104 26 2 110 12 100 7 43 90 33 65 97 113 96 8 101 57 115 10 106 
+! -------------------------------------------------------- 
+! All verification passed

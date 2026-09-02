@@ -5,6 +5,7 @@ export TZ='Asia/Ho_Chi_Minh'
 scripts=(
     "abp/abp_x0.5_no_hole.sh"
     "abp/abp_x0.75_no_hole.sh"
+    "abp/abp_x1_no_hole.sh"
     "abp/abp_x1.sh"
     "abp/abp_x1.25.sh"
     "abp/abp_x1.5.sh"
@@ -13,6 +14,7 @@ scripts=(
 
     "cabp/cabp_x0.5_no_hole.sh"
     "cabp/cabp_x0.75_no_hole.sh"
+    "cabp/cabp_x1_no_hole.sh"
     "cabp/cabp_x1.sh"
     "cabp/cabp_x1.25.sh"
     "cabp/cabp_x1.5.sh"

@@ -1,0 +1,35 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/S-sherman4.mtx.rnd
+! Target value is set to 261
+! Lower bound is set to 262
+! Upper bound is set to 546
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 547 variables, 2434 constraints, 1 phase
+ ! Presolve      : 546 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.10s (0.10s extraction + 0.00s propagation)
+ !  . Log search space  : 4966.5 (before), 4966.5 (after)
+ !  . Memory usage      : 1.4 MB (before), 1.4 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        547                 -
+ + New bound is 262
+                        0        547    1   F        -
+ + New bound is 522
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 522
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 14603386
+ ! Number of fails        : 6533004
+ ! Total memory usage     : 217.4 MB (213.3 MB CP Optimizer + 4.0 MB Concert)
+ ! Time spent in solve    : 1800.12s (1800.02s engine + 0.10s extraction)
+ ! Search speed (br. / s) : 8112.9
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Search stopped without finding a feasible solution (e.g., time limit reached)
+! --------------------------------------------------------

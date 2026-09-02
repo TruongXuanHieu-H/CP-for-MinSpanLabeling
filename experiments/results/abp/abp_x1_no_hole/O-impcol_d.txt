@@ -1,0 +1,37 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/O-impcol_d.mtx.rnd
+! Target value is set to 120
+! Lower bound is set to 121
+! Upper bound is set to 425
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 426 variables, 2118 constraints, 1 phase
+ ! Presolve      : 425 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
+ !  . Log search space  : 3718.1 (before), 3718.1 (after)
+ !  . Memory usage      : 1.3 MB (before), 1.3 MB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        426                 -
+ + New bound is 121
+                        0        426    1   F        -
+ + New bound is 240
+                      186        425    1   F    93 != _int349
+ + New bound is 241
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 241
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 69389016
+ ! Number of fails        : 32597571
+ ! Total memory usage     : 282.2 MB (279.3 MB CP Optimizer + 2.8 MB Concert)
+ ! Time spent in solve    : 1800.09s (1800.02s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 38549.2
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Search stopped without finding a feasible solution (e.g., time limit reached)
+! --------------------------------------------------------

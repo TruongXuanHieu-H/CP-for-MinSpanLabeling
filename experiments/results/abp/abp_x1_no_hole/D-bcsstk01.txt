@@ -1,0 +1,59 @@
+! Solving for graph /home/truongxuanhieu/CPLEX-CP-for-MinSpanLabeling/benchmarks/abp/D-bcsstk01.mtx.rnd
+! Target value is set to 9
+! Lower bound is set to 10
+! Upper bound is set to 48
+! Time limit is set to 1800
+! Vertices mode is set to No hole
+! Target value mode is set to Antibandwidth
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 49 variables, 273 constraints, 1 phase
+ ! Presolve      : 48 extractables eliminated, 1 constraint generated
+ ! TimeLimit            = 1800
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 272.4 (before), 272.4 (after)
+ !  . Memory usage      : 382.7 kB (before), 382.7 kB (after)
+ ! Using parallel search with 8 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0         49                 -
+ + New bound is 10
+                        0         49    1            -
+ + New bound is 17
+                        0         49    1   F        -
+ + New bound is 18
+ *            48     154k  2.63s        2      (gap is 62.50%)
+              48     167k         46    7   F    28 != _int34
+ + New bound is 34 (gap is 29.17%)
+ *            47     329k  5.79s        1      (gap is 27.66%)
+              47    1296k         37    7   F     2 != _int42
+ + New bound is 35 (gap is 25.53%)
+              47    1866k         17    2   F     3 != _int43
+ + New bound is 36 (gap is 23.40%)
+              47    1888k         46    2   F     2 != _int28
+ + New bound is 37 (gap is 21.28%)
+              47    5384k         29    1   F     1 != _int43
+ + New bound is 38 (gap is 19.15%)
+              47    7730k         33    1   F     1 != _int43
+ + New bound is 39 (gap is 17.02%)
+              47   10783k         37    1   F    38 != _int44
+ + New bound is 40 (gap is 14.89%)
+              47   19037k         37    7            -
+ + New bound is 47 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 2 solutions found.
+ ! Best objective         : 47 (optimal - effective tol. is 0)
+ ! Best bound             : 47
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 149905015
+ ! Number of fails        : 72971642
+ ! Total memory usage     : 54.5 MB (54.3 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 343.49s (343.47s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 436442.8
+ ! ----------------------------------------------------------------------------
+! --------------------------------------------------------
+! Status: OPTIMAL
+! Best span = 47
+! Labeling: 40 45 36 8 23 4 19 46 25 29 15 13 11 20 3 17 7 31 33 10 37 39 14 16 12 47 5 24 38 27 1 6 32 30 9 18 44 42 1 21 22 2 34 41 26 35 28 43 
+! -------------------------------------------------------- 
+! All verification passed
